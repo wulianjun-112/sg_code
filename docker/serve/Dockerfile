@@ -44,4 +44,5 @@ USER model-server
 WORKDIR /home/model-server
 ENV TEMP=/home/model-server/tmp
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+# ENTRYPOINT ["ls","-s"]
 CMD ["serve"]

@@ -8,5 +8,9 @@ else
     eval "$@"
 fi
 
+
+python 
+
+
 # prevent docker exit
 tail -f /dev/null
