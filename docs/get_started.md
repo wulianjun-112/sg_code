@@ -184,7 +184,8 @@ docker build -t mmdetection docker/
 ```
 
 Run it with
-sudo docker run --gpus 1 --shm-size=16g -it -v /home/lianjunwu/code/datasets/coco/val2017:/usr/input_picture:ro -v /data/taoranyi/temp_for_wulianjun/CBNetV2/output_dir:/usr/output_dir -e MODEL_TYPES=00,01 -e NMS=0.5 -e SCORE=0.3 -d mmdetection
+sudo docker run --gpus 1 --shm-size=16g -it -v /etc/localtime:/etc/localtime:ro -v /home/lianjunwu/code/datasets/coco/val2017:/usr/input_picture:ro -v /data/taoranyi/temp_for_wulianjun/CBNetV2/output_dir:/usr/output_dir -e MODEL_TYPES=00,01 -e NMS=0.5 -e SCORE=0.3 -d cbnetv2
+
 ```shell
 sudo docker run --gpus 1 --shm-size=16g -it -v /home/lianjunwu/code/datasets/coco/val2017:/mmdetection/data mmdetection
 ```

@@ -30,8 +30,8 @@ WORKDIR /CBNetV2
 ENV FORCE_CUDA="1"
 RUN pip install -r requirements/build.txt
 RUN pip install --no-cache-dir -e .
-
-COPY start.sh /usr/local/bin/start.sh
 # RUN pwd
 # RUN start.sh
-ENTRYPOINT ["start.sh"]
+# COPY /data/taoranyi/temp_for_wulianjun/CBNetV2/tools/start.sh start.sh
+# COPY /data/taoranyi/temp_for_wulianjun/CBNetV2/tools/test_docker.py tools/test_docker.py
+ENTRYPOINT ["tools/start.sh"]
