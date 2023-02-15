@@ -31,7 +31,7 @@ ENV FORCE_CUDA="1"
 RUN pip install -r requirements/build.txt
 RUN pip install --no-cache-dir -e .
 
-# COPY start.sh /usr/local/bin/start.sh
+COPY start.sh /usr/local/bin/start.sh
 # RUN pwd
 # RUN start.sh
-# ENTRYPOINT ["start.sh"]
+ENTRYPOINT ["start.sh"]
